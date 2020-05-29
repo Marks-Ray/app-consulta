@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ConsultaFragment">
+
+    <Button
+        android:id="@+id/btn_listar_consulta"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:background="#2E44BF"
+        android:text="Listar"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_add_consulta"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:background="#2E44BF"
+        android:text="Adicionar"
+        android:textColor="@android:color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frag_conteudo_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
