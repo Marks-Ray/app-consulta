@@ -19,7 +19,7 @@
             android:textColor="@android:color/holo_red_light" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/nomeMedico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -28,7 +28,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/crm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -37,7 +37,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/logradouroMedico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -46,7 +46,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/numCasaMedico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -55,7 +55,7 @@
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/cidadeMedico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -63,30 +63,42 @@
             android:hint="cidade"
             android:inputType="textPersonName" />
 
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UF" />
+
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/ufMedico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/array_UF"
             android:layout_marginBottom="10dp" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/celularMedico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="celular"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/teleFixoMedico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="telefone fixo"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_salvar_medico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar" />
 
     </LinearLayout>
 </FrameLayout>

@@ -26,12 +26,18 @@
             android:layout_marginBottom="10dp"
             android:inputType="textPersonName" />
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo sanguineo" />
+
         <Spinner
             android:id="@+id/gprSanguineo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/tipoSanguineo"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:entries="@array/tipoSanguineo" />
 
         <EditText
             android:id="@+id/logradouroPaciente"
@@ -60,12 +66,18 @@
             android:hint="cidade"
             android:inputType="textPersonName" />
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UF" />
+
         <Spinner
             android:id="@+id/ufPaciente"
-            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
-            android:entries="@array/array_UF"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/array_UF" />
 
         <EditText
             android:id="@+id/celularPaciente"
@@ -84,6 +96,7 @@
             android:ems="10"
             android:hint="telefone fixo"
             android:inputType="textPersonName" />
+
 
     </LinearLayout>
 </FrameLayout>
