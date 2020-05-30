@@ -35,7 +35,7 @@ public class PacienteFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_paciente, container, false);
 
         btn_add = view.findViewById(R.id.btn_add_paciente);
-        btn_listar = view.findViewById(R.id.btn_add_paciente);
+        btn_listar = view.findViewById(R.id.btn_listar_paciente);
 
         addPaciente = new AddPacienteFragment();
         listPaciente = new ListarPacienteFragment();
