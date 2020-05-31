@@ -20,17 +20,17 @@
             android:textColor="@android:color/holo_red_light" />
 
         <Spinner
-            android:id="@+id/spinner3"
+            android:id="@+id/consulta_paciente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <Spinner
-            android:id="@+id/spinner4"
+            android:id="@+id/consulta_medico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/data_inicio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -38,7 +38,7 @@
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/data_fim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -46,11 +46,17 @@
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/editText10"
+            android:id="@+id/consulta_obs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="observação"
             android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_salvar_consulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="salvar consulta" />
     </LinearLayout>
 </FrameLayout>
