@@ -62,15 +62,44 @@ public class AddPacienteFragment extends Fragment {
                 numero = numeroP.getText().toString().trim();
                 uf = ufP.getSelectedItem().toString();
                 sangue = sangueP.getSelectedItem().toString();
+                int sangue1 = 0;
+                if (sangue == "A+"){
+                    sangue1 = 0;
+                }
+                else if(sangue == "A-"){
+                    sangue1 = 1;
+                }
+                else if(sangue == "B+"){
+                    sangue1 = 2;
+                }
+
+                else if(sangue == "B-"){
+                    sangue1 = 3;
+                }
+
+                else if(sangue == "O+"){
+                    sangue1 = 4;
+                }
+                else if(sangue == "O-"){
+                    sangue1 = 5;
+                }
+
+                else if(sangue == "AB+"){
+                    sangue1 = 6;
+                }
+
+                else if(sangue == "AB-"){
+                    sangue1 = 7;
+                }
 
                 if (nome.equals("") || logradouro.equals("") || cidade.equals("") || celular.equals("") || fixo.equals("") || numero.equals("")) {
                     Toast.makeText(v.getContext(), "Todos os campos deve ser preenchidos", Toast.LENGTH_LONG).show();
                 } else {
                     db = getActivity().getApplicationContext().openOrCreateDatabase("appConsulta.db", Context.MODE_PRIVATE, null);
                     StringBuilder sql = new StringBuilder();
-                    sql.append("INSERT INTO paciente(nome,grp_sanguineo, crm,logradouro,numero,cidade,uf,celular,fixo) VALUES (");
+                    sql.append("INSERT INTO paciente(nome,grp_sanguineo,logradouro,numero,cidade,uf,celular,fixo) VALUES (");
                     sql.append("'" + nome + "', ");
-                    sql.append("'" + sangue + "', ");
+                    sql.append("'" + sangue1 + "', ");
                     sql.append("'" + logradouro + "', ");
                     sql.append("'" + numero + "', ");
                     sql.append("'" + cidade + "', ");
@@ -81,7 +110,7 @@ public class AddPacienteFragment extends Fragment {
 
                     try {
                         db.execSQL(sql.toString());
-                        Toast.makeText(v.getContext(), "Medico inserido", Toast.LENGTH_LONG).show();
+                        Toast.makeText(v.getContext(), "paciente inserido", Toast.LENGTH_LONG).show();
                     } catch (SQLException e) {
                         Toast.makeText(v.getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                     }
