@@ -6,6 +6,7 @@
     tools:context=".fragment.listar.ListarConsultaFragment">
 
     <ListView
+        android:id="@+id/Listar_consulta"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </FrameLayout>
